@@ -14,8 +14,6 @@ var getFileLinks = function(){
     ret.push({ "name": "/" + filename, "href": "/" + filename});
   });
 
-  console.log(ret);
-
   return ret;
 };
 
