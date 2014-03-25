@@ -1,9 +1,12 @@
 {
-  "name": "application-name",
+  "name": "instahost",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node app.js"
+  },
+  "bin": {
+    "instahost": "bin/instahost.js"
   },
   "dependencies": {
     "express": "3.2.6",
