@@ -7,7 +7,7 @@ fs = require('fs');
 
 
 var hostPath = path.join(process.cwd(), 'public');
-if(!fs.statSync(hostPath)) hostPath = process.cwd();
+if(!path.existsSync(hostPath)) hostPath = process.cwd();
 
 var getFileLinks = function(subPath, callback){
   var links = [];

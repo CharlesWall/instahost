@@ -13,7 +13,7 @@ var express = require('express')
 var app = express();
 
 var hostPath = path.join(process.cwd(), 'public');
-if(!fs.statSync(hostPath)) hostPath = process.cwd();
+if(!path.existsSync(hostPath)) hostPath = process.cwd();
 
 // all environments
 app.set('port', process.env.PORT || 3000);
