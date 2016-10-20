@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 require('coffee-script/register');
 
 options = {
@@ -14,7 +15,7 @@ for(var i = 0; i < process.argv.length; i++){
 		default:
 			options.hostPath = arg
 			break;
-	} 
+	}
 }
 
 require('./app')(options);
