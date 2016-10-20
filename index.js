@@ -3,10 +3,10 @@ require('coffee-script/register');
 
 options = {
 	port: 3000,
-	hostPath: '.'
+	hostPath: process.cwd()
 }
 
-for(var i = 0; i < process.argv.length; i++){
+for(var i = 2; i < process.argv.length; i++){
 	var arg = process.argv[i];
 	switch(arg){
 		case '-p':
@@ -17,7 +17,5 @@ for(var i = 0; i < process.argv.length; i++){
 			break;
 	}
 }
-
-console.log(process.cwd(), process.env.PWD);
 
 require('./app')(options);
