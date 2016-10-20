@@ -6,7 +6,7 @@ module.exports = (options)->
 	app = express()
 
 	{port, hostPath} = options
-	
+
 	viewsDir = path.join __dirname, '/views'
 
 	routes = require('./routes')({hostPath})
@@ -23,7 +23,7 @@ module.exports = (options)->
 
 	# development only
 	app.use express.errorHandler() if 'development' == app.get 'env'
-	  
+
 	app.use routes
 
 	http.createServer(app).listen port, ->

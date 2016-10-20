@@ -1,7 +1,9 @@
 {
-  "name": "application-name",
+  "name": "instahost",
   "version": "0.0.1",
-  "private": true,
+  "bin": {
+    "instahost": "./index.js"
+  },
   "scripts": {
     "start": "node app.js"
   },
