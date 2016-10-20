@@ -1,6 +1,6 @@
 {
   "name": "instahost",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "bin": {
     "instahost": "./index.js"
   },
