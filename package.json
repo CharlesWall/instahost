@@ -1,6 +1,6 @@
 {
   "name": "instahost",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "bin": {
     "instahost": "./index.js"
   },
@@ -8,6 +8,7 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "bluebird": "^3.4.6",
     "coffee-script": "^1.11.1",
     "express": "3.2.6",
     "jade": "*"

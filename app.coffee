@@ -19,7 +19,7 @@ module.exports = (options)->
 
 	# all environments
 	console.log "hosting #{hostPath}"
-	app.use express.static hostPath
+	# app.use express.static hostPath
 
 	# development only
 	app.use express.errorHandler() if 'development' == app.get 'env'

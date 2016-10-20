@@ -18,4 +18,6 @@ for(var i = 0; i < process.argv.length; i++){
 	}
 }
 
+console.log(process.cwd(), process.env.PWD);
+
 require('./app')(options);
