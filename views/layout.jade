@@ -2,5 +2,15 @@ doctype html
 html
   head
     title= title
+    style
+      | .ss-button { 
+      |   position: absolute; display: block; height: 100%; width: 20%;
+      | }
+      | .ss-button:hover { border: 1px black; }
+      | .prev { left: 0 }
+      | .next { right: 0}
+      | .ss-img { width: 100%; height: 100%; object-fit: contain; }
+      | .ss-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; text-align: center; }
+      | .ss-enter-button {background: red; text-color: white; }
   body
     block content

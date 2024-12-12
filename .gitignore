@@ -1,3 +1,5 @@
 .idea/
+.idea
 public/
 node_modules/
+.vscode

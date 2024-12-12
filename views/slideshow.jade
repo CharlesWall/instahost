@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  div.ss-container
+    a.ss-dir-button(href=dirLink) Exit SlideShow
+    if prevLink
+        a.ss-button.prev(href='/_slideshow'+prevLink.href)= `Previous (${prevLink.href})`
+    
+    if nextLink
+        a.ss-button.next(href='/_slideshow'+nextLink.href)= `Next (${nextLink.href})` 
+
+    img.ss-img(src=asset)
+
+    h1= title
